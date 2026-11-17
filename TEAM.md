@@ -12,7 +12,7 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
+|   2 |    Hà Phan Đại Dương    |   2A202604119   |   26ai.duonghpd@vinuni.edu.vn    |    DanielHa01    |       |
 
 Gợi ý chia vai:
 
