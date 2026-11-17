@@ -4,7 +4,7 @@
 `Shape chọn` phải là đúng một trong: `workflow`, `single`, `orchestrator`, `swarm`. Đây là shape được chấm cổng hidden.
 
 - Shape chọn: workflow
-- Commit hash:
+- Commit hash: 73b7c1e3ddbd4d348860f94a85426793fc505cb1
 - Run id dẫn chứng: R-workflow-C-001-s11; R-workflow-C-002-s55; R-workflow-C-007-s55; R-workflow-C-013-s55; R-workflow-C-014-s55 (đối chiếu trong src/reports/benchmark.json).
 - Pass rate / pass^5 / seed min-max / variance: 1,0 (70/70 lượt) / 1,0 (14/14 claim đúng ở cả 5 seed) / 1,0–1,0 / 0,0; áp dụng cho workflow trên bộ public.
 - Cost per success (mô phỏng, VND): 27,857142857142858, xấp xỉ 27,86 VND; tổng chi phí 1.950 VND cho 70 lượt thành công.
@@ -50,4 +50,4 @@ Kết quả hiện có chỉ bao gồm 14 claim public và năm seed; chưa có 
 
 MockLLM không phải model sản xuất. Chi phí là VND mô phỏng theo bảng giá của lab, không phải hóa đơn API; latency giữ nguyên `unavailable`. Các shape còn khác cách gọi model, prompt và công cụ, nên phép so sánh hiện tại đánh giá toàn bộ cách triển khai, chưa cô lập tác động riêng của topology. Số bước là số event trong trace; cách ghi event khác nhau giữa các shape, vì vậy ít bước hơn không tự chứng minh chạy nhanh hơn hay ít công việc hơn.
 
-File benchmark không chứa commit hash hay mã định danh duy nhất cho toàn bộ đợt benchmark; run ID định danh từng tổ hợp shape, claim và seed và có thể lặp lại khi chạy lại. Mục commit hash hiện để trống vì ba file shape chưa được commit; HEAD hiện tại chưa đại diện đầy đủ cho mã nguồn đang được đánh giá. Cần commit mã nguồn cùng bằng chứng, điền hash của commit đó rồi commit ADR theo hướng dẫn nộp bài. Giữ nguyên JSON do công cụ sinh ra, không sửa số liệu để đạt ngưỡng.
+File benchmark không chứa commit hash hay mã định danh duy nhất cho toàn bộ đợt benchmark; run ID định danh từng tổ hợp shape, claim và seed và có thể lặp lại khi chạy lại. Ba shape và bằng chứng gốc đã nằm trong commit 73b7c1e3ddbd4d348860f94a85426793fc505cb1 (Daniel Ha). Hash ở đầu ADR định danh mã triển khai; phần rà soát/test/tài liệu bổ sung chưa được commit và chưa chốt nộp bài. Giữ nguyên JSON do công cụ sinh ra, không sửa số liệu để đạt ngưỡng.
