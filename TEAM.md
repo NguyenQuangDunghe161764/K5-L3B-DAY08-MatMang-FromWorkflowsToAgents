@@ -6,7 +6,7 @@
 - Lớp: L3B
 - Repo nhóm: `K5-L3B-DAY08-MatMang-FromWorkflowsToAgents` (lớp L3B đã được Nguyễn Quang Dũng xác nhận)
 - URL repo: https://github.com/NguyenQuangDunghe161764/K5-L3B-DAY08-MatMang-FromWorkflowsToAgents
-- Nhánh nộp, commit chốt: chưa xác nhận; mã triển khai shape ở 73b7c1e
+- Nhánh: main; commit chứa phần rà soát/test/báo cáo: 24b188d599b3a4ec5cc853da5d75894910b7c157; mã triển khai shape ở 73b7c1e. Commit bổ sung thông tin này sẽ được tạo sau.
 
 ## Thành viên
 
@@ -34,7 +34,7 @@
 | Người | Vai | Commit | Test đã thêm hoặc sửa |
 | --- | --- | --- | --- |
 | Hà Phan Đại Dương | Ba shape, bằng chứng gốc, ADR | 73b7c1e; a397d08 cập nhật TEAM | Chưa thấy test thêm/sửa trong hai commit; cần bổ sung đúng thực tế |
-| Nguyễn Quang Dũng | Rà CP1–CP5, test crash/trace, ablation, report; có Codex hỗ trợ | Chưa commit | src/tests/test_team_regressions.py (12 test); src/tests/ablation_ticket.py (thí nghiệm) |
+| Nguyễn Quang Dũng | Rà CP1–CP5, test crash/trace, ablation, report; có Codex hỗ trợ | 24b188d | src/tests/test_team_regressions.py (12 test); src/tests/ablation_ticket.py (thí nghiệm) |
 
 ## Cá nhân
 
@@ -65,6 +65,6 @@ Sao chép mục dưới đây cho từng thành viên.
 ## Ghi nhận rà soát
 
 - Phần làm trước đối chiếu bằng git show 73b7c1e: workflow.py, single.py, orchestrator.py, benchmark.json, crash.json và decision_adr.md.
-- Phần làm tiếp còn là thay đổi chưa commit; không gán test starter cho thành viên. Bảng được điền không đồng nghĩa đã đáp ứng yêu cầu mỗi người có commit kỹ thuật và test riêng.
+- Phần làm tiếp được ghi nhận trong commit 24b188d của Nguyễn Quang Dũng, gồm test_team_regressions.py và ablation_ticket.py. Không gán test starter cho thành viên; yêu cầu test thêm/sửa của Đại Dương chưa có bằng chứng trong các commit đã kiểm tra.
 - Báo cáo Đại Dương là bản nháp dựa trên Git; công cụ AI và tự đánh giá cần chính thành viên xác nhận.
 - Báo cáo Nguyễn Quang Dũng: [2A202604031_NguyenQuangDung.md](report/team/2A202604031_NguyenQuangDung.md). Họ tên, MSSV và lớp L3B đã được xác nhận; email/GitHub chưa cung cấp.

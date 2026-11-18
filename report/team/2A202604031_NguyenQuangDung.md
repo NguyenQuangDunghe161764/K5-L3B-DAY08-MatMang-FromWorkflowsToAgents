@@ -26,11 +26,11 @@ Các thao tác cài đặt, viết test, chạy lệnh và soạn tài liệu d�
 - Thêm tests/test_team_regressions.py: 9 trường hợp crash/resume (3 shape × 3 cửa sổ), retry thêm một lần để kiểm ledger, 3 trường hợp unknown claim kiểm trace.
 - Thêm tests/ablation_ticket.py: bản sao dữ liệu chỉ đổi ticket C-002 từ 5 ngày thành 2, chạy benchmark hai điều kiện với cùng 14 claim và 5 seed.
 - Chạy lại benchmark/crash suite; viết group_report và research_card, cập nhật ADR/TEAM và nháp báo cáo cá nhân.
-- Chưa tạo commit; không nhận ba shape đã được Đại Dương triển khai là phần làm mới.
+- Commit: `24b188d599b3a4ec5cc853da5d75894910b7c157` — tác giả Nguyen Quang Dung, nội dung NguyenQuangDung-2A202604031. Commit chứa test, ablation và tài liệu của phần làm tiếp; không nhận ba shape đã được Đại Dương triển khai là phần làm mới.
 
 ## 4. Bằng chứng
 
-12 test mới pass; 248 student test pass; crash suite 20/20. reports/ablation_baseline.json và reports/ablation_aligned_ticket.json: swarm từ 69/70 thành 70/70; ba shape nhóm giữ 70/70. Commit phần làm tiếp chưa có.
+12 test mới pass; 248 student test pass; crash suite 20/20. reports/ablation_baseline.json và reports/ablation_aligned_ticket.json: swarm từ 69/70 thành 70/70; ba shape nhóm giữ 70/70. Commit phần làm tiếp: `24b188d`, gồm tests/test_team_regressions.py và tests/ablation_ticket.py.
 
 ## 5. Công cụ AI đã dùng
 
